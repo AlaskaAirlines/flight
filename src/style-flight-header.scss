@@ -34,7 +34,11 @@
   justify-content: space-between;
   padding-bottom: var(--ds-size-50, $ds-size-50);
   color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
-  font-size: var(--ds-text-body-size-default, $ds-text-body-size-default);
+  font-size: var(--ds-text-body-size-sm, $ds-text-body-size-sm);
+
+  @include auro_breakpoint--sm {
+    font-size: var(--ds-text-body-size-default, $ds-text-body-size-default);
+  }
 }
 
 .daysChanged {

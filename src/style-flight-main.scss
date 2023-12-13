@@ -39,25 +39,25 @@
   padding-left: var(--ds-size-200, $ds-size-200);
 }
 
-.departureTime {
+.departureTime, .arrivalTime {
   padding-bottom: var(--ds-size-25, $ds-size-25);
   color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
   font-size: var(--ds-text-heading-300-size, $ds-text-heading-300-size);
+  font-weight: var(--ds-text-heading-300-weight, $ds-text-heading-300-weight);
   line-height: var(--ds-text-heading-700-height-breakpoint-md, $ds-text-heading-700-height-breakpoint-md);
+}
+
+.departureTime {
   text-align: left;
+}
+
+.arrivalTime {
+  text-align: right;
 }
 
 .departureStation {
   color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
   text-align: left;
-}
-
-.arrivalTime {
-  padding-bottom: var(--ds-size-25, $ds-size-25);
-  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
-  font-size: var(--ds-text-heading-300-size, $ds-text-heading-300-size);
-  line-height: var(--ds-text-heading-700-height-breakpoint-md, $ds-text-heading-700-height-breakpoint-md);
-  text-align: right;
 }
 
 .arrivalStation {
@@ -80,6 +80,6 @@
 
 @include auro_breakpoint--sm {
   .departureTime, .arrivalTime {
-    font-size: var(--auro-text-heading-700-size-breakpoint-sm);
+    font-size: var(--ds-text-heading-600-size-breakpoint-lg, $ds-text-heading-600-size-breakpoint-lg);
   }
 }
